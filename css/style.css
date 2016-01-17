@@ -163,15 +163,18 @@ ul.portfolio p {
 ul.portfolio img {
   width: 500px;
   height: auto;
+  border-radius: 10px;
 }
 
 ul.portfolio li:hover span {
   transform: translateY(-250px);
+  transition: opacity 1s;
   opacity: 1;
 }
 
 ul.portfolio li:hover img {
-  opacity: .3;
+  transition: opacity 1s;
+  opacity: .4;
 }
 
 ul.portfolio a {
