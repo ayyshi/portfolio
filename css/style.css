@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow|Glass+Antiqua|Elsie+Swash+Caps:900|Flamenco|Yeseva+One|PT+Mono);
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 20pt;
+  background-color: #922D50;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  width: 20%;
+  min-width: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  display: table;
+  text-align: center;
+}
+
+nav > div {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #922D50;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: red;
+  -webkit-text-fill-color: #922D50;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+
+nav a:hover {
+  color: red;
+  -webkit-text-fill-color: #922D50;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+}
+
+ul#menu li {
+  padding: 10px;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 30pt;
+}
+
+ul#social li {
+  display: inline-block;
+}
+
+ul#social img {
+  width: 60px;
+  margin: 5px;
+}
+
+section {
+  width: 80%;
+  display: table;
+  height: 100vh;
+}
+
+section > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+section:nth-of-type(even) {
+  background-color: #DDCECD;
+}
+
+section:nth-of-type(odd) {
+  background-color: #EEE5E5;
+}
+
+section p {
+  margin: auto 100px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 80pt;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Elsie Swash Caps', cursive;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 60pt;
+}
+
+ul.portfolio li {
+  display: inline-block;
+  width: 500px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: black;
+}
+
+ul.portfolio span {
+  opacity: 0;
+  display: table-cell;
+  text-align: justify;
+  width: 500px;
+  padding: 0px;
+}
+
+ul.portfolio h3 {
+  margin: 0px;
+  text-align: center;
+}
+
+ul.portfolio p {
+  text-align: justify;
+  padding: 0px;
+  margin: 20px;
+}
+
+ul.portfolio img {
+  width: 500px;
+  height: auto;
+}
+
+ul.portfolio li:hover span {
+  transform: translateY(-250px);
+  opacity: 1;
+}
+
+ul.portfolio li:hover img {
+  opacity: .3;
+}
+
+ul.portfolio a {
+  color: white;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 14pt;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section p {
+    margin: 20px;
+  }
+
+  ul.portfolio li {
+    width: 400px;
+    height: 250px;
+  }
+
+  ul.portfolio img {
+    width: 400px;
+    height: 250px;
+  }
+
+}
