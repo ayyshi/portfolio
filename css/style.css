@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Vast+Shadow|Glass+Antiqua|Elsie+Swash+Caps:900|Flamenco|Yeseva+One|PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow|Glass+Antiqua|Elsie+Swash+Caps:400,900|Flamenco|Yeseva+One|PT+Mono);
 
 body {
   text-align: center;
@@ -25,23 +25,44 @@ nav > div {
   background-color: #922D50;
 }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
+#menu a {
+	position: relative;
+	outline: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 400;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
 }
 
-nav a:active {
-  color: red;
-  -webkit-text-fill-color: #922D50;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFFFFF;
+#menu a::before {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	color: transparent;
+	content: '•';
+  font-size: 12pt;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
 }
 
-nav a:hover {
-  color: red;
-  -webkit-text-fill-color: #922D50;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFFFFF;
+#menu a:hover::before,
+#menu a:focus::before,
+#menu a:active::before {
+	color: #FFFFFF;
+	text-shadow: 10px 0 #FFFFFF, -10px 0 #FFFFFF;
+}
+
+#menu a:hover,
+#menu a:focus,
+#menu a:active {
+	color: #FFFFFF;
 }
 
 ul, li {
@@ -51,7 +72,7 @@ ul, li {
 }
 
 ul#menu li {
-  padding: 10px;
+  margin: 50px auto;
   font-family: 'Elsie Swash Caps', cursive;
   font-size: 30pt;
 }
@@ -85,9 +106,11 @@ section:nth-of-type(odd) {
   background-color: #EEE5E5;
 }
 
-section p {
+section h3, p {
   margin: auto 100px;
   text-align: justify;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 400;
 }
 
 h1 {
@@ -95,11 +118,13 @@ h1 {
   text-align: center;
   margin: 0px;
   font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 900;
   color: #FFFFFF;
 }
 
 h2 {
   font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 900;
   font-size: 60pt;
 }
 
@@ -151,6 +176,12 @@ ul.portfolio a {
   text-decoration: none;
   font-style: bold;
   font-size: 14pt;
+}
+
+#about p {
+  font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 400;
+  font-size: 50pt;
 }
 
 @media only screen and (max-width: 800px) {
