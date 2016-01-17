@@ -98,6 +98,10 @@ section > div {
   text-align: center;
 }
 
+iframe {
+  margin-bottom: 100px;
+}
+
 section:nth-of-type(even) {
   background-color: #DDCECD;
 }
@@ -107,8 +111,8 @@ section:nth-of-type(odd) {
 }
 
 section h3, p {
-  margin: auto 100px;
-  text-align: justify;
+  font-size: 20pt;
+  margin: auto 150px;
   font-family: 'Elsie Swash Caps', cursive;
   font-weight: 400;
 }
@@ -132,27 +136,26 @@ ul.portfolio li {
   display: inline-block;
   width: 500px;
   height: 250px;
-  margin: 10px;
+  margin: 50px;
   border-radius: 10px;
   overflow: hidden;
   background-color: black;
+
 }
 
 ul.portfolio span {
   opacity: 0;
   display: table-cell;
-  text-align: justify;
+  text-align: center;
   width: 500px;
   padding: 0px;
 }
 
 ul.portfolio h3 {
   margin: 0px;
-  text-align: center;
 }
 
 ul.portfolio p {
-  text-align: justify;
   padding: 0px;
   margin: 20px;
 }
@@ -174,7 +177,6 @@ ul.portfolio li:hover img {
 ul.portfolio a {
   color: white;
   text-decoration: none;
-  font-style: bold;
   font-size: 14pt;
 }
 
@@ -182,6 +184,7 @@ ul.portfolio a {
   font-family: 'Elsie Swash Caps', cursive;
   font-weight: 400;
   font-size: 50pt;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
@@ -197,7 +200,7 @@ ul.portfolio a {
   }
 
   section p {
-    margin: 20px;
+    margin: 50px;
   }
 
   ul.portfolio li {
