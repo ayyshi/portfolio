@@ -191,36 +191,40 @@ ul.portfolio a {
   line-height: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-  nav {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 50px auto;
-  }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-  section {
-    width: 100%;
-  }
+    nav {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 50px auto;
+    }
 
-  section > div {
-    padding: 50px;
-  }
+    section {
+      width: 100%;
+    }
 
-  #about p {
-    font-size: 30pt;
-    text-align: justify;
-    line-height: 60px;
-  }
+    section > div {
+      padding: 50px;
+    }
 
-  ul.portfolio li {
-    width: 400px;
-    height: 250px;
-  }
+    #about p {
+      font-size: 30pt;
+      text-align: justify;
+      line-height: 60px;
+    }
 
-  ul.portfolio img {
-    width: 400px;
-    height: 250px;
-  }
+    ul.portfolio li {
+      width: 400px;
+      height: 250px;
+    }
+
+    ul.portfolio img {
+      width: 400px;
+      height: 250px;
+    }
 
 }
