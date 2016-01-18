@@ -188,6 +188,7 @@ ul.portfolio a {
   font-weight: 400;
   font-size: 50pt;
   text-align: justify;
+  line-height: 100px;
 }
 
 @media only screen and (max-width: 800px) {
