@@ -96,10 +96,7 @@ section > div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-
-iframe {
-  margin-bottom: 100px;
+  padding: 100px;
 }
 
 section:nth-of-type(even) {
@@ -108,13 +105,6 @@ section:nth-of-type(even) {
 
 section:nth-of-type(odd) {
   background-color: #EEE5E5;
-}
-
-section h3, p {
-  font-size: 20pt;
-  margin: auto 150px;
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight: 400;
 }
 
 h1 {
@@ -140,7 +130,6 @@ ul.portfolio li {
   border-radius: 10px;
   overflow: hidden;
   background-color: #FFFFFF;
-
 }
 
 ul.portfolio span {
@@ -152,12 +141,16 @@ ul.portfolio span {
 }
 
 ul.portfolio h3 {
+  font-size: 30pt;
+  font-family: 'Elsie Swash Caps', cursive;
   margin: 0px;
 }
 
 ul.portfolio p {
+  font-size: 20pt;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 400;
   padding: 0px;
-  margin: 20px;
 }
 
 ul.portfolio img {
@@ -167,7 +160,7 @@ ul.portfolio img {
 }
 
 ul.portfolio li:hover span {
-  transform: translateY(-230px);
+  transform: translateY(-250px);
   transition: opacity 1s;
   opacity: 1;
 }
@@ -203,8 +196,14 @@ ul.portfolio a {
     width: 100%;
   }
 
-  section p {
-    margin: 50px;
+  section > div {
+    padding: 50px;
+  }
+
+  #about p {
+    font-size: 30pt;
+    text-align: justify;
+    line-height: 60px;
   }
 
   ul.portfolio li {
