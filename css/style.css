@@ -139,7 +139,7 @@ ul.portfolio li {
   margin: 50px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: black;
+  background-color: #FFFFFF;
 
 }
 
@@ -167,18 +167,18 @@ ul.portfolio img {
 }
 
 ul.portfolio li:hover span {
-  transform: translateY(-250px);
+  transform: translateY(-230px);
   transition: opacity 1s;
   opacity: 1;
 }
 
 ul.portfolio li:hover img {
   transition: opacity 1s;
-  opacity: .4;
+  opacity: .1;
 }
 
 ul.portfolio a {
-  color: white;
+  color: #222222;
   text-decoration: none;
   font-size: 14pt;
 }
