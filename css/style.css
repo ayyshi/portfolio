@@ -176,6 +176,13 @@ ul.portfolio a {
   font-size: 14pt;
 }
 
+#photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: dotted 5px white;
+}
+
 #about p {
   font-family: 'Elsie Swash Caps', cursive;
   font-weight: 400;
