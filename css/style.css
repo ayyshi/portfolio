@@ -1,68 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Vast+Shadow|Glass+Antiqua|Elsie+Swash+Caps:400,900|Flamenco|Yeseva+One|PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 body {
   text-align: center;
-  margin: 0 auto;
   font-family: sans-serif;
   font-size: 20pt;
-  background-color: #922D50;
+  background-color: #C3CAD1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin: 100px;
 }
 
-nav {
-  position: fixed;
-  right: 0;
-  width: 20%;
-  min-width: 300px;
-  height: 100vh;
-  overflow-x: hidden;
-  display: table;
-  text-align: center;
-}
-
-nav > div {
-  display: table-cell;
-  vertical-align: middle;
-  background-color: #922D50;
-}
-
-#menu a {
-	position: relative;
-	outline: none;
-	color: #FFFFFF;
-	text-decoration: none;
-	font-weight: 400;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-#menu a::before {
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	color: transparent;
-	content: '•';
-  font-size: 12pt;
-	-webkit-transition: text-shadow 0.3s, color 0.3s;
-	-moz-transition: text-shadow 0.3s, color 0.3s;
-	transition: text-shadow 0.3s, color 0.3s;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
-	pointer-events: none;
-}
-
-#menu a:hover::before,
-#menu a:focus::before,
-#menu a:active::before {
-	color: #FFFFFF;
-	text-shadow: 10px 0 #FFFFFF, -10px 0 #FFFFFF;
-}
-
-#menu a:hover,
-#menu a:focus,
-#menu a:active {
-	color: #FFFFFF;
+#photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: solid 2px #FFFFFF;
 }
 
 ul, li {
@@ -71,154 +23,11 @@ ul, li {
   padding: 0px;
 }
 
-ul#menu li {
-  margin: 50px auto;
-  font-family: 'Elsie Swash Caps', cursive;
-  font-size: 30pt;
-}
-
-ul#social li {
+ul#icons li {
   display: inline-block;
 }
 
-ul#social img {
+ul#icons img {
   width: 60px;
   margin: 5px;
-}
-
-section {
-  width: 80%;
-  display: table;
-  height: 100vh;
-}
-
-section > div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding: 100px;
-}
-
-section:nth-of-type(even) {
-  background-color: #DDCECD;
-}
-
-section:nth-of-type(odd) {
-  background-color: #EEE5E5;
-}
-
-h1 {
-  font-size: 80pt;
-  text-align: center;
-  margin: 0px;
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight: 900;
-  color: #FFFFFF;
-}
-
-h2 {
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight: 900;
-  font-size: 60pt;
-}
-
-ul.portfolio li {
-  display: inline-block;
-  width: 500px;
-  height: 250px;
-  margin: 50px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
-ul.portfolio span {
-  opacity: 0;
-  display: table-cell;
-  text-align: center;
-  width: 500px;
-  padding: 0px;
-}
-
-ul.portfolio h3 {
-  font-size: 30pt;
-  font-family: 'Elsie Swash Caps', cursive;
-  margin: 0px;
-}
-
-ul.portfolio p {
-  font-size: 20pt;
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight: 400;
-  padding: 0px;
-}
-
-ul.portfolio img {
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-}
-
-ul.portfolio li:hover span {
-  transform: translateY(-250px);
-  transition: opacity 1s;
-  opacity: 1;
-}
-
-ul.portfolio li:hover img {
-  transition: opacity 1s;
-  opacity: .1;
-}
-
-ul.portfolio a {
-  color: #222222;
-  text-decoration: none;
-  font-size: 14pt;
-}
-
-#photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  border: dotted 5px white;
-}
-
-#about p {
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight: 400;
-  font-size: 50pt;
-  text-align: justify;
-  line-height: 100px;
-}
-
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    nav {
-      position: relative;
-      width: 100%;
-      height: auto;
-      margin: 50px auto;
-    }
-
-    section {
-      width: 100%;
-    }
-
-    section > div {
-      padding: 50px;
-    }
-
-    ul.portfolio li {
-      width: 400px;
-      height: 250px;
-    }
-
-    ul.portfolio img {
-      width: 400px;
-      height: 250px;
-    }
-
 }
